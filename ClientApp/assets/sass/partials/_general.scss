@@ -1,0 +1,34 @@
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+.el-dropdown-link {
+  cursor: pointer;
+}
+
+.page-title {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    right: -30px;
+    bottom: 0;
+    height: 1px;
+    background: $color-athens-gray;
+  }
+}
+
+.content-panel {
+  margin: 20px 0;
+  padding: 40px 30px 30px;
+  border-radius: 4px;
+  background: lighten($color-athens-gray, 2%);
+}

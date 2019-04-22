@@ -1,0 +1,38 @@
+{
+  "name": "Web",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "@types/webpack-env": "^1.13.0",
+    "aspnet-webpack": "^3.0.0",
+    "awesome-typescript-loader": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "element-ui": "^2.5.4",
+    "event-source-polyfill": "^0.0.7",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "^0.9.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.1.1",
+    "moment": "^2.24.0",
+    "node-sass": "4.9.0",
+    "popper.js": "^1.15.0",
+    "prettier": "^1.16.4",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.13.1",
+    "typescript": "2.7.2",
+    "url-loader": "^0.5.7",
+    "vue": "2.6.10",
+    "vue-loader": "^14.2.4",
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "3.0.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "2.6.10",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^1.12.2",
+    "webpack-hot-middleware": "^2.12.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "bootstrap": "^4.3.1"
+  }
+}

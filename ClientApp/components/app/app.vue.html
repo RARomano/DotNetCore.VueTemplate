@@ -1,0 +1,20 @@
+<template>
+  <div id="app-root" class="wrapper">
+    <ui-header></ui-header>
+
+    <div class="page-container">
+      <main class="main-content">
+
+        <div class="inner-content">
+          <router-view :key="$route.fullPath"></router-view>
+        </div>
+
+        <footer class="main-footer">Footer</footer>
+      </main>
+    </div>
+  </div>
+</template>
+
+<style src="assets/sass/site.scss" lang="scss"></style>
+
+<script src="./app.ts"></script>

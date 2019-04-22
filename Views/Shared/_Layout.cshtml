@@ -1,0 +1,29 @@
+@using System.Security.Claims
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+    <base href="~/" />
+    <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+</head>
+<body>
+    @RenderBody()
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        var identity = User.Identity as ClaimsIdentity;
+        string name = identity.Claims.FirstOrDefault(c => c.Type == "name")?.Value;
+        
+        <script>
+            window.userName = '@name';
+        </script>
+    }
+
+    <script src="~/dist/vendor.js" asp-append-version="true"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

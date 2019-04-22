@@ -1,0 +1,34 @@
+<template>
+  <nav class="navbar navbar-dark bg-dark">
+    <router-link to="/" exact class="navbar-brand">
+      <span>Site Name</span>
+    </router-link>
+    <div class="navbar-nav">
+      <el-dropdown trigger="click" @command="handleCommand">
+        <span class="el-dropdown-link">
+          {{ userName }}
+          <i class="el-icon-arrow-down el-icon--right"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item command="exit">Exit</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+    </div>
+  </nav>
+</template>
+
+<script src="./header-bar.ts"></script>
+
+<style lang="scss" scoped>
+  @import "../../../assets/sass/config/variables";
+
+  .navbar-brand span {
+    padding-left: 10px;
+    font-size: 20pt;
+    color: $color-white;
+  }
+
+  .navbar-nav .el-dropdown {
+    color: $color-white;
+  }
+</style>
